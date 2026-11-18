@@ -54,6 +54,13 @@ back to an older copy mechanism, and some browsers block it entirely.
    and folder **`/ (root)`**. Save.
 5. Wait a minute or two, then visit `https://<user>.github.io/<repo>/`.
 
+**Social preview URLs:** `og:url`, `og:image`, `twitter:image` and `canonical` in
+`index.html` are absolute, pointing at
+`https://chris-genone.github.io/MobileWorkstationMockup/`. They have to be absolute —
+LinkedIn, Facebook and Slack do not resolve relative image paths, and a relative one means
+no preview card. **If the site moves to a custom domain, update those four tags**, then
+re-scrape the page in LinkedIn's Post Inspector so the old card is flushed.
+
 **Paths:** every reference in the page (`css/styles.css`, `assets/og-image.png`,
 `privacy.html`) is relative, so the site works unchanged at a repo subpath like
 `/casework-landing/` as well as at a domain root. Keep it that way — a leading slash
