@@ -53,6 +53,18 @@
     </nav>
 
     <a class="btn btn-accent btn-sm header-cta" href="#waitlist">Join the waitlist</a>
+
+    <details class="menu">
+      <summary aria-label="Menu">
+        <span class="menu-bars" aria-hidden="true"></span>
+      </summary>
+      <div class="menu-panel">
+        <a href="#how-it-works">How it works</a>
+        <a href="#whats-inside">What&rsquo;s inside</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </details>
   </div>
 </header>
 
@@ -64,9 +76,9 @@
       <div>
         <h1 id="hero-title">Your desk setup, waiting at every hotel.</h1>
         <p class="lede">
-          Two monitors, a universal dock, a full-size keyboard and mouse &mdash; delivered
-          to your hotel before you check in, for one flat monthly price. You carry a laptop.
-          That&rsquo;s it.
+          Two monitors, a universal dock, a full-size keyboard and mouse, delivered to
+          your hotel before you check in. One flat monthly price. You carry a laptop and
+          nothing else.
         </p>
         <div class="hero-actions">
           <a class="btn btn-accent" href="#waitlist">Get early access</a>
@@ -150,23 +162,17 @@
 
   <!-- ============================================================= problem -->
   <section class="band" aria-labelledby="problem-title">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">The Thursday-night reality</span>
+    <div class="wrap pains-grid">
+      <div class="pains-intro">
         <h2 id="problem-title">A 14-inch screen is not an office.</h2>
         <p>
-          You bill by the hour, then spend those hours squinting at a laptop on a
+          You bill by the hour. Then you spend those hours squinting at a laptop on a
           hotel desk built for postcards.
         </p>
       </div>
 
-      <ul class="card-grid three plain reveal">
-        <li class="card">
-          <svg class="icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-            <rect x="8" y="12" width="32" height="22" rx="3" class="ic-stroke"/>
-            <path d="M18 40h12M24 34v6" class="ic-stroke"/>
-            <path d="M14 19h10M14 25h16" class="ic-accent"/>
-          </svg>
+      <ol class="pains reveal">
+        <li>
           <h3>One screen, ten hours</h3>
           <p>
             The deck is open. So is the model, the data room, and a client thread you
@@ -174,32 +180,21 @@
             it should.
           </p>
         </li>
-        <li class="card">
-          <svg class="icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-            <path d="M7 24h34v4H7z" class="ic-stroke"/>
-            <path d="M11 28v12M37 28v12" class="ic-stroke"/>
-            <path d="M14 24v-6h8v6" class="ic-stroke"/>
-            <path d="M30 24c0-5 3-7 3-7" class="ic-accent"/>
-          </svg>
+        <li>
           <h3>Hotel desks fight back</h3>
           <p>
             A fixed lamp in the corner. One outlet, behind the bed. A chair at the wrong
             height. By 9pm you&rsquo;ve given up and moved to the mattress.
           </p>
         </li>
-        <li class="card">
-          <svg class="icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-            <rect x="12" y="16" width="24" height="24" rx="4" class="ic-stroke"/>
-            <path d="M19 16v-4a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v4" class="ic-stroke"/>
-            <path d="M22 26l8 8M30 26l-8 8" class="ic-accent"/>
-          </svg>
+        <li>
           <h3>The hauling tax</h3>
           <p>
             A portable monitor is weight in your bag, another brick out of it at security,
             and one more thing to leave in a nightstand drawer in Cleveland.
           </p>
         </li>
-      </ul>
+      </ol>
     </div>
   </section>
 
@@ -207,7 +202,6 @@
   <section id="how-it-works" aria-labelledby="how-title">
     <div class="wrap">
       <div class="section-head">
-        <span class="eyebrow">How it works</span>
         <h2 id="how-title">It gets there before you do.</h2>
         <p>Four steps, and only two of them involve you.</p>
       </div>
@@ -254,8 +248,7 @@
     <div class="wrap inside-grid">
       <div>
         <div class="section-head">
-          <span class="eyebrow">What&rsquo;s inside</span>
-          <h2 id="inside-title">One case. A real desk.</h2>
+          <h2 id="inside-title">Everything a real desk needs, packed once.</h2>
           <p>
             Packed in cut foam so it survives the trip, and so you can see at a glance
             if anything is missing before you hand it back.
@@ -264,7 +257,7 @@
 
         <ul class="checklist">
           <li>Two portable monitors, on folding stands</li>
-          <li>Universal USB-C dock &mdash; one cable, Mac or PC, charges your laptop</li>
+          <li>Universal USB-C dock: one cable, Mac or PC, charges your laptop</li>
           <li>Full-size keyboard with a number pad</li>
           <li>Mouse, with a travel pad</li>
           <li>Power strip, so you stop hunting for outlets</li>
@@ -369,7 +362,6 @@
   <section class="band" aria-labelledby="compare-title">
     <div class="wrap">
       <div class="section-head">
-        <span class="eyebrow">The alternatives</span>
         <h2 id="compare-title">You already have three options. Two of them are tiring.</h2>
       </div>
 
@@ -390,33 +382,33 @@
           <tbody>
             <tr>
               <th scope="row">Screens you work on</th>
-              <td>Laptop + one</td>
-              <td>Two, where it&rsquo;s offered</td>
-              <td class="is-us">Laptop + two</td>
+              <td data-label="Carry a portable monitor">Laptop + one</td>
+              <td data-label="Rent per day at select hotels">Two, where it&rsquo;s offered</td>
+              <td class="is-us" data-label="Casework">Laptop + two</td>
             </tr>
             <tr>
               <th scope="row">Weight you carry</th>
-              <td>In your bag, every leg</td>
-              <td>None</td>
-              <td class="is-us">None</td>
+              <td data-label="Carry a portable monitor">In your bag, every leg</td>
+              <td data-label="Rent per day at select hotels">None</td>
+              <td class="is-us" data-label="Casework">None</td>
             </tr>
             <tr>
               <th scope="row">Works at any hotel</th>
-              <td>Yes</td>
-              <td>Only at partner properties</td>
-              <td class="is-us">Yes &mdash; we ship to the hotel</td>
+              <td data-label="Carry a portable monitor">Yes</td>
+              <td data-label="Rent per day at select hotels">Only at partner properties</td>
+              <td class="is-us" data-label="Casework">Yes, we ship to the hotel</td>
             </tr>
             <tr>
               <th scope="row">Setup each night</th>
-              <td>Unpack, prop, re-cable</td>
-              <td>Varies by property</td>
-              <td class="is-us">Open the case, one cable</td>
+              <td data-label="Carry a portable monitor">Unpack, prop, re-cable</td>
+              <td data-label="Rent per day at select hotels">Varies by property</td>
+              <td class="is-us" data-label="Casework">Open the case, one cable</td>
             </tr>
             <tr>
               <th scope="row">What it costs</th>
-              <td>Bought once, carried forever</td>
-              <td>A daily rate, per trip</td>
-              <td class="is-us">One predictable monthly price</td>
+              <td data-label="Carry a portable monitor">Bought once, carried forever</td>
+              <td data-label="Rent per day at select hotels">A daily rate, per trip</td>
+              <td class="is-us" data-label="Casework">One predictable monthly price</td>
             </tr>
           </tbody>
         </table>
@@ -451,7 +443,6 @@
   <section id="faq" class="band" aria-labelledby="faq-title">
     <div class="wrap narrow">
       <div class="section-head">
-        <span class="eyebrow">FAQ</span>
         <h2 id="faq-title">Reasonable questions.</h2>
         <p>We&rsquo;re pre-launch, so some of these are plans rather than promises. Marked as such.</p>
       </div>
@@ -474,8 +465,8 @@
             <p>
               That&rsquo;s the plan: a universal USB-C dock, one cable, no software to install
               and nothing to approve with IT. Older or restricted laptops sometimes cap you at
-              one external screen &mdash; we&rsquo;ll include the adapters that work around it
-              where we can, and we&rsquo;ll be upfront where we can&rsquo;t.
+              one external screen. We&rsquo;ll include the adapters that work around it where we
+              can, and we&rsquo;ll be upfront where we can&rsquo;t.
             </p>
           </div>
         </details>
@@ -507,7 +498,7 @@
             <p>
               We&rsquo;re starting with New York, Chicago, Dallas, Atlanta and the Bay Area,
               because that&rsquo;s where the most consulting nights are. Tell us where you
-              actually fly in the form &mdash; the waitlist decides what opens next.
+              actually fly in the form. The waitlist decides what opens next.
             </p>
           </div>
         </details>
@@ -537,8 +528,8 @@
             <p>
               Honestly: when enough people on this list say they&rsquo;d pay for it. We&rsquo;re
               validating demand before buying a single monitor. Join the list and you&rsquo;ll
-              hear directly from us &mdash; first about the pilot, then about pricing that stays
-              locked for founding members.
+              hear directly from us: first about the pilot, then about pricing that stays locked
+              for founding members.
             </p>
           </div>
         </details>
@@ -716,8 +707,8 @@
           </svg>
           <h3>You&rsquo;re on the list.</h3>
           <p>
-            We&rsquo;ll email you before anything launches &mdash; and we&rsquo;ll ask what
-            you want in the case before we buy a thing.
+            We&rsquo;ll email you before anything launches, and we&rsquo;ll ask what you want in
+            the case before we buy a thing.
           </p>
           <p class="share-line">Know a fellow road warrior?</p>
           <button type="button" class="btn btn-ghost" id="copy-link"
@@ -729,6 +720,14 @@
   </section>
 
 </main>
+
+<div class="mobile-cta" id="mobile-cta" hidden>
+  <p>
+    <strong>Founding member pricing</strong>
+    <span>From <span data-price="occasional">$79</span>/mo. Nothing charged today.</span>
+  </p>
+  <a class="btn btn-accent btn-sm" href="#waitlist">Join the waitlist</a>
+</div>
 
 <footer class="site-footer">
   <div class="wrap footer-grid">

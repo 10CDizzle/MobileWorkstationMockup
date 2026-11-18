@@ -262,6 +262,49 @@
     targets.forEach(function (el) { io.observe(el); });
   }
 
+  /* ------------------------------------------- sticky CTA bar on phones */
+  var bar = $('#mobile-cta');
+  var hero = $('.hero');
+  var waitlist = $('#waitlist');
+
+  if (bar && hero && waitlist && 'IntersectionObserver' in window) {
+    bar.hidden = false;
+    document.body.classList.add('has-mobile-cta');
+
+    var pastHero = false;
+    var atForm = false;
+    var paintBar = function () {
+      bar.classList.toggle('is-shown', pastHero && !atForm);
+    };
+
+    new IntersectionObserver(function (entries) {
+      pastHero = !entries[0].isIntersecting;
+      paintBar();
+    }, { threshold: 0 }).observe(hero);
+
+    new IntersectionObserver(function (entries) {
+      atForm = entries[0].isIntersecting;
+      paintBar();
+    }, { threshold: 0 }).observe(waitlist);
+  }
+
+  /* ------------------------------ close the phone menu after a jump */
+  var menu = $('.menu');
+  if (menu) {
+    $$('.menu-panel a').forEach(function (link) {
+      link.addEventListener('click', function () { menu.open = false; });
+    });
+    document.addEventListener('click', function (event) {
+      if (menu.open && !menu.contains(event.target)) { menu.open = false; }
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && menu.open) {
+        menu.open = false;
+        $('.menu > summary').focus();
+      }
+    });
+  }
+
   /* ============================================== optional, off by default */
   var analytics = cfg.analytics || {};
   if (analytics.enabled && analytics.goatCounterCode) {
