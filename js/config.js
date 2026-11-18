@@ -42,8 +42,9 @@ window.CASEWORK_CONFIG = {
   //    entry.XXXXXXXXX numbers out of the URL.
   // 4. Paste the form ID and each entry ID below.
   //
-  // Until you do, the IDs below are placeholders and submissions will fail
-  // silently against Google (the page still shows its success state locally).
+  // Connected 2026-11-18. Responses land in the linked sheet
+  // "Casework waitlist — responses". If you change a plan's price above, change the
+  // matching option text in the Google Form too, or that answer stops recording.
   googleForm: {
     // The long string between /d/e/ and /viewform in your form's public URL.
     formId: '1FAIpQLScd6hPG8Sum3jXaVzDySdPYegB8hP236U-xew6VWVDrNeYn-w',
