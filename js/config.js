@@ -46,20 +46,20 @@ window.CASEWORK_CONFIG = {
   // silently against Google (the page still shows its success state locally).
   googleForm: {
     // The long string between /d/e/ and /viewform in your form's public URL.
-    formId: 'REPLACE_WITH_FORM_ID',
+    formId: '1FAIpQLScd6hPG8Sum3jXaVzDySdPYegB8hP236U-xew6VWVDrNeYn-w',
 
     entries: {
-      email:        'entry.1000000001',
-      firstName:    'entry.1000000002',
-      role:         'entry.1000000003',
-      nights:       'entry.1000000004',
-      reimburse:    'entry.1000000005',
-      plan:         'entry.1000000006',
-      wtp:          'entry.1000000007',
-      mustHaves:    'entry.1000000008',
-      notes:        'entry.1000000009',
-      utmSource:    'entry.1000000010',
-      planClicked:  'entry.1000000011'
+      email:        'entry.1767198026',
+      firstName:    'entry.1282133057',
+      role:         'entry.2129245737',
+      nights:       'entry.1497820674',
+      reimburse:    'entry.1810272216',
+      plan:         'entry.887924708',
+      wtp:          'entry.822559115',
+      mustHaves:    'entry.1167526847',
+      notes:        'entry.66185553',
+      utmSource:    'entry.1883342330',
+      planClicked:  'entry.1386583279'
     }
   },
 
