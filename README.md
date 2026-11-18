@@ -103,7 +103,19 @@ There is no backend and nothing to host. **Until you do this, submissions go now
 the page will still show its success state locally, because a cross-origin form post is
 opaque by design and the browser never tells us whether Google accepted it.
 
-### a. Build the form
+### Fastest path: run the setup script
+
+`tools/create-form.gs` builds the form, creates the response sheet, links them, and
+prints the pre-filled URL with every entry id. Open <https://script.google.com>, start a
+new project, paste the file in, run `createCaseworkForm`, approve the permission prompt,
+and read the Execution log. Then skip to step **d** below.
+
+Use it rather than clicking the form together by hand: several answer strings contain an
+en dash (`1-4` is really `1–4`), an em dash (`Occasional — $79/mo`) or a curly apostrophe
+(`I’m self-employed`), and typing those manually produces ASCII lookalikes that Google
+accepts but never matches, so the answer is dropped without an error.
+
+### a. Build the form by hand (if you skipped the script)
 
 Create a form at <https://forms.google.com> with these questions, in this order. The
 answer options must match the text below **character for character**, including the em
