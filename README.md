@@ -55,7 +55,7 @@ back to an older copy mechanism, and some browsers block it entirely.
 
 **Social preview URLs:** `og:url`, `og:image`, `twitter:image` and `canonical` in
 `index.html` are absolute, pointing at
-`https://chris-genone.github.io/MobileWorkstationMockup/`. They have to be absolute —
+`https://10cdizzle.github.io/MobileWorkstationMockup/`. They have to be absolute —
 LinkedIn, Facebook and Slack do not resolve relative image paths, and a relative one means
 no preview card. **If the site moves to a custom domain, update those four tags**, then
 re-scrape the page in LinkedIn's Post Inspector so the old card is flushed.
@@ -237,9 +237,9 @@ Add a parameter to the URL and it lands in the Source column of the Sheet:
 
 | Where you post it | Link |
 |---|---|
-| LinkedIn post | `https://<user>.github.io/<repo>/?utm_source=linkedin` |
-| Reddit comment | `https://<user>.github.io/<repo>/?utm_source=reddit` |
-| Slack / forwarded to a friend | `https://<user>.github.io/<repo>/?ref=friend` |
+| LinkedIn post | `https://10cdizzle.github.io/MobileWorkstationMockup/?utm_source=linkedin` |
+| Reddit comment | `https://10cdizzle.github.io/MobileWorkstationMockup/?utm_source=reddit` |
+| Slack / forwarded to a friend | `https://10cdizzle.github.io/MobileWorkstationMockup/?ref=friend` |
 | A specific campaign | `?utm_source=linkedin&utm_campaign=dec-post` → recorded as `linkedin / dec-post` |
 
 Visits with no parameter are recorded as `direct`. The copy-link button on the thank-you
