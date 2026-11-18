@@ -45,13 +45,12 @@ back to an older copy mechanism, and some browsers block it entirely.
 
    ```bash
    git remote add origin https://github.com/<user>/<repo>.git
-   git branch -M main
-   git push -u origin main
+   git push -u origin master
    ```
 
 3. In the repository, go to **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**, then branch **`main`**
-   and folder **`/ (root)`**. Save.
+4. Under **Build and deployment**, choose **Deploy from a branch**, then branch
+   **`master`** (whichever branch you actually pushed) and folder **`/ (root)`**. Save.
 5. Wait a minute or two, then visit `https://<user>.github.io/<repo>/`.
 
 **Social preview URLs:** `og:url`, `og:image`, `twitter:image` and `canonical` in
