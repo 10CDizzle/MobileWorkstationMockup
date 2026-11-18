@@ -247,8 +247,11 @@ section { padding-block: var(--s6); }
 .nav a:hover { color: var(--ink); }
 @media (min-width: 880px) { .nav { display: flex; } }
 
-.header-cta { display: none; }
-@media (min-width: 560px) { .header-cta { display: inline-flex; } }
+.header-cta { white-space: nowrap; }
+@media (max-width: 420px) {
+  .site-header .wrap { padding-inline: var(--s2); gap: var(--s2); }
+  .wordmark { font-size: 1.0625rem; }
+}
 
 /* ---------------------------------------------------------------- 6. Hero */
 .hero { padding-block: var(--s5) var(--s6); }
@@ -707,3 +710,4 @@ section { padding-block: var(--s6); }
   background: var(--bg-alt);
   border: 1px solid var(--line);
 }
+.prose code { white-space: nowrap; }
