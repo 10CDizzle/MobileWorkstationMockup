@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Casework">
+  <rect width="64" height="64" rx="14" fill="#11212f"/>
+  <rect x="11" y="20" width="42" height="29" rx="6" fill="none" stroke="#fbf9f6" stroke-width="4"/>
+  <path d="M24 20v-3a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5v3" fill="none" stroke="#fbf9f6" stroke-width="4" stroke-linecap="round"/>
+  <rect x="27" y="30" width="10" height="9" rx="2.5" fill="#d97a12"/>
+</svg>

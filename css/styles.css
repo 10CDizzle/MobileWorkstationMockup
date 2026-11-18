@@ -689,3 +689,21 @@ section { padding-block: var(--s6); }
 .site-footer .wordmark { margin-bottom: .35rem; }
 
 .pricing + .fine-print.center { margin-top: var(--s4); }
+
+/* ------------------------------------------------------- prose (privacy) */
+.prose h1 { margin-bottom: var(--s2); }
+.prose h2 {
+  font-size: 1.3rem;
+  margin-top: var(--s5);
+  margin-bottom: var(--s1);
+}
+.prose p { color: var(--ink-soft); max-width: 68ch; }
+.prose p.lede { font-size: 1.1875rem; margin-bottom: var(--s4); }
+.prose code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .9em;
+  padding: .12em .4em;
+  border-radius: 5px;
+  background: var(--bg-alt);
+  border: 1px solid var(--line);
+}
