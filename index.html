@@ -23,6 +23,7 @@
 <link rel="icon" href="assets/favicon.png" sizes="96x96" type="image/png">
 <link rel="apple-touch-icon" href="assets/favicon.png">
 <link rel="stylesheet" href="css/styles.css">
+<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -74,7 +75,7 @@
       </div>
 
       <div class="hero-art">
-        <svg viewBox="0 0 680 480" class="illo" role="img" aria-labelledby="hero-art-title">
+        <svg viewBox="0 0 680 504" class="illo" role="img" aria-labelledby="hero-art-title">
           <title id="hero-art-title">A hotel desk set up with two monitors flanking a laptop, beside an open rolling hard case on the floor.</title>
 
           <rect x="18" y="26" width="644" height="300" rx="26" class="il-wash"/>
@@ -117,31 +118,646 @@
           <rect x="259" y="328" width="92" height="4" rx="2" class="il-pixel"/>
           <rect x="412" y="314" width="26" height="22" rx="11" class="il-panel"/>
 
-          <!-- open rolling case -->
-          <g transform="rotate(-21 92 388)">
-            <rect x="92" y="330" width="176" height="58" rx="12" class="il-case"/>
-            <rect x="108" y="346" width="144" height="26" rx="7" class="il-foam"/>
-          </g>
-          <rect x="92" y="388" width="176" height="62" rx="12" class="il-case"/>
-          <rect x="106" y="400" width="66" height="38" rx="6" class="il-foam"/>
-          <rect x="180" y="400" width="74" height="38" rx="6" class="il-foam"/>
-          <rect x="166" y="380" width="28" height="16" rx="4" class="il-accent-fill"/>
-          <circle cx="116" cy="456" r="9" class="il-panel"/>
-          <circle cx="244" cy="456" r="9" class="il-panel"/>
+          <!-- rolling case, lying open on the floor -->
+          <path d="M62 418h-18a8 8 0 0 0-8 8v14a8 8 0 0 0 8 8h18" class="il-outline"/>
+          <rect x="62" y="392" width="178" height="80" rx="11" class="il-case"/>
+          <rect x="76" y="404" width="70" height="56" rx="5" class="il-foam"/>
+          <rect x="154" y="404" width="72" height="56" rx="5" class="il-foam"/>
+          <rect x="236" y="404" width="10" height="16" rx="3" class="il-panel"/>
+          <rect x="236" y="444" width="10" height="16" rx="3" class="il-panel"/>
+          <rect x="242" y="392" width="178" height="80" rx="11" class="il-case"/>
+          <rect x="258" y="404" width="122" height="26" rx="5" class="il-foam"/>
+          <rect x="258" y="438" width="44" height="22" rx="5" class="il-foam"/>
+          <rect x="312" y="438" width="68" height="22" rx="5" class="il-foam"/>
+          <rect x="54" y="420" width="14" height="26" rx="4" class="il-accent-fill"/>
+          <rect x="414" y="420" width="14" height="26" rx="4" class="il-accent-fill"/>
 
           <!-- prepaid label -->
-          <rect x="292" y="404" width="58" height="40" rx="5" class="il-panel"/>
-          <rect x="301" y="414" width="40" height="4" rx="2" class="il-pixel"/>
-          <rect x="301" y="423" width="30" height="4" rx="2" class="il-pixel"/>
-          <rect x="301" y="432" width="36" height="4" rx="2" class="il-accent-fill"/>
+          <rect x="456" y="404" width="60" height="44" rx="5" class="il-panel"/>
+          <rect x="466" y="414" width="40" height="4" rx="2" class="il-pixel"/>
+          <rect x="466" y="424" width="30" height="4" rx="2" class="il-pixel"/>
+          <rect x="466" y="434" width="36" height="4" rx="2" class="il-accent-fill"/>
 
-          <path d="M60 465h330" class="il-desk"/>
+          <path d="M40 488h476" class="il-desk"/>
         </svg>
       </div>
     </div>
   </section>
 
+  <!-- ============================================================= problem -->
+  <section class="band" aria-labelledby="problem-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The Thursday-night reality</span>
+        <h2 id="problem-title">A 14-inch screen is not an office.</h2>
+        <p>
+          You bill by the hour, then spend those hours squinting at a laptop on a
+          hotel desk built for postcards.
+        </p>
+      </div>
+
+      <ul class="card-grid three plain reveal">
+        <li class="card">
+          <svg class="icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+            <rect x="8" y="12" width="32" height="22" rx="3" class="ic-stroke"/>
+            <path d="M18 40h12M24 34v6" class="ic-stroke"/>
+            <path d="M14 19h10M14 25h16" class="ic-accent"/>
+          </svg>
+          <h3>One screen, ten hours</h3>
+          <p>
+            The deck is open. So is the model, the data room, and a client thread you
+            can&rsquo;t drop. You alt-tab for ten hours and everything takes longer than
+            it should.
+          </p>
+        </li>
+        <li class="card">
+          <svg class="icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+            <path d="M7 24h34v4H7z" class="ic-stroke"/>
+            <path d="M11 28v12M37 28v12" class="ic-stroke"/>
+            <path d="M14 24v-6h8v6" class="ic-stroke"/>
+            <path d="M30 24c0-5 3-7 3-7" class="ic-accent"/>
+          </svg>
+          <h3>Hotel desks fight back</h3>
+          <p>
+            A fixed lamp in the corner. One outlet, behind the bed. A chair at the wrong
+            height. By 9pm you&rsquo;ve given up and moved to the mattress.
+          </p>
+        </li>
+        <li class="card">
+          <svg class="icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+            <rect x="12" y="16" width="24" height="24" rx="4" class="ic-stroke"/>
+            <path d="M19 16v-4a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v4" class="ic-stroke"/>
+            <path d="M22 26l8 8M30 26l-8 8" class="ic-accent"/>
+          </svg>
+          <h3>The hauling tax</h3>
+          <p>
+            A portable monitor is weight in your bag, another brick out of it at security,
+            and one more thing to leave in a nightstand drawer in Cleveland.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ======================================================== how it works -->
+  <section id="how-it-works" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How it works</span>
+        <h2 id="how-title">It gets there before you do.</h2>
+        <p>Four steps, and only two of them involve you.</p>
+      </div>
+
+      <ol class="steps reveal">
+        <li class="step">
+          <span class="step-num" aria-hidden="true">1</span>
+          <h3>Subscribe</h3>
+          <p>
+            Pick a plan. One monthly price covers the kit, shipping in both directions,
+            and a replacement if something fails on the road.
+          </p>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">2</span>
+          <h3>Send us your trips</h3>
+          <p>
+            Hotel and check-in date is all we need. Forward the confirmation email and
+            we&rsquo;ll pull the details out of it. Calendar sync comes later.
+          </p>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">3</span>
+          <h3>It&rsquo;s at the front desk</h3>
+          <p>
+            Your case is waiting under your name when you check in. Roll it up, open it,
+            plug one cable into your laptop. Both screens come up.
+          </p>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">4</span>
+          <h3>Leave it at checkout</h3>
+          <p>
+            Close the case, hand it to the front desk. The prepaid label is already on it.
+            The next kit is already headed to your next hotel.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ======================================================== what's inside -->
+  <section id="whats-inside" class="band" aria-labelledby="inside-title">
+    <div class="wrap inside-grid">
+      <div>
+        <div class="section-head">
+          <span class="eyebrow">What&rsquo;s inside</span>
+          <h2 id="inside-title">One case. A real desk.</h2>
+          <p>
+            Packed in cut foam so it survives the trip, and so you can see at a glance
+            if anything is missing before you hand it back.
+          </p>
+        </div>
+
+        <ul class="checklist">
+          <li>Two portable monitors, on folding stands</li>
+          <li>Universal USB-C dock &mdash; one cable, Mac or PC, charges your laptop</li>
+          <li>Full-size keyboard with a number pad</li>
+          <li>Mouse, with a travel pad</li>
+          <li>Power strip, so you stop hunting for outlets</li>
+          <li>HDMI, USB-C and USB-A cables, labelled</li>
+          <li>Rolling hard case that fits in a hotel closet</li>
+        </ul>
+
+        <p class="fine-print">
+          Exact hardware gets finalised with founding members. Tell us what you need in
+          the form below and it goes on the list.
+        </p>
+      </div>
+
+      <div class="inside-art">
+        <svg viewBox="0 0 440 320" class="illo" role="img" aria-labelledby="inside-art-title">
+          <title id="inside-art-title">A rolling hard case packed with two monitors, a keyboard, a dock and cables in cut foam.</title>
+          <rect x="16" y="24" width="408" height="272" rx="18" class="il-case"/>
+          <rect x="34" y="42" width="372" height="236" rx="10" class="il-foam"/>
+          <rect x="52" y="60" width="150" height="104" rx="6" class="il-screen"/>
+          <rect x="218" y="60" width="150" height="104" rx="6" class="il-screen"/>
+          <rect x="52" y="182" width="230" height="52" rx="6" class="il-panel"/>
+          <rect x="66" y="196" width="202" height="5" rx="2.5" class="il-pixel"/>
+          <rect x="66" y="208" width="202" height="5" rx="2.5" class="il-pixel"/>
+          <rect x="66" y="220" width="150" height="5" rx="2.5" class="il-pixel"/>
+          <rect x="298" y="182" width="70" height="52" rx="22" class="il-panel"/>
+          <rect x="52" y="248" width="112" height="22" rx="8" class="il-accent-fill"/>
+          <rect x="180" y="248" width="102" height="22" rx="8" class="il-panel"/>
+          <rect x="298" y="248" width="70" height="22" rx="8" class="il-panel"/>
+          <path d="M16 150h-8a6 6 0 0 0-6 6v26a6 6 0 0 0 6 6h8" class="il-outline"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= pricing -->
+  <section id="pricing" aria-labelledby="pricing-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Founding member pricing (planned)</span>
+        <h2 id="pricing-title">Pick the plan you&rsquo;d actually buy.</h2>
+        <p>
+          These prices are our working hypothesis, not a checkout page. Tell us which one
+          fits and you help set the real thing.
+        </p>
+      </div>
+
+      <ul class="card-grid three plain pricing reveal">
+        <li class="card plan">
+          <h3>Occasional</h3>
+          <p class="price">
+            <span data-price="occasional">$79</span><span class="period" data-period="occasional">/mo</span>
+          </p>
+          <p class="plan-line">For the two-trips-a-month stretch.</p>
+          <ul class="ticks">
+            <li>Up to 2 hotel stays a month</li>
+            <li>Full kit, delivered and collected</li>
+            <li>Replacement shipped if something fails</li>
+            <li>Cancel any month</li>
+          </ul>
+          <button type="button" class="btn btn-ghost btn-block" data-plan="occasional">Reserve this plan</button>
+        </li>
+
+        <li class="card plan featured">
+          <span class="badge">Most popular</span>
+          <h3>Road Warrior</h3>
+          <p class="price">
+            <span data-price="roadwarrior">$149</span><span class="period" data-period="roadwarrior">/mo</span>
+          </p>
+          <p class="plan-line">Mon&ndash;Thu, every week, wherever that lands.</p>
+          <ul class="ticks">
+            <li>Unlimited stays</li>
+            <li>Priority delivery and same-week itinerary changes</li>
+            <li>Your layout saved, so every kit arrives the same</li>
+            <li>Monthly invoice built for expense reports</li>
+          </ul>
+          <button type="button" class="btn btn-accent btn-block" data-plan="roadwarrior">Reserve this plan</button>
+        </li>
+
+        <li class="card plan">
+          <h3>Pay per trip</h3>
+          <p class="price">
+            <span data-price="pertrip">$35</span><span class="period" data-period="pertrip">/stay</span>
+          </p>
+          <p class="plan-line">No subscription. Pay when you travel.</p>
+          <ul class="ticks">
+            <li>Same kit, same setup</li>
+            <li>Standard delivery window</li>
+            <li>Billed per stay, nothing monthly</li>
+            <li>Costs more past two stays a month</li>
+          </ul>
+          <button type="button" class="btn btn-ghost btn-block" data-plan="pertrip">Reserve this plan</button>
+        </li>
+      </ul>
+
+      <p class="fine-print center">
+        Nothing is charged today. We&rsquo;re gathering interest before launch.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================================== comparison -->
+  <section class="band" aria-labelledby="compare-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The alternatives</span>
+        <h2 id="compare-title">You already have three options. Two of them are tiring.</h2>
+      </div>
+
+      <div class="table-scroll reveal">
+        <table class="compare">
+          <caption class="visually-hidden">
+            How carrying a portable monitor, renting by the day at select hotels, and
+            Casework compare.
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col"><span class="visually-hidden">Compared on</span></th>
+              <th scope="col">Carry a portable monitor</th>
+              <th scope="col">Rent per day at select hotels</th>
+              <th scope="col" class="is-us">Casework</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Screens you work on</th>
+              <td>Laptop + one</td>
+              <td>Two, where it&rsquo;s offered</td>
+              <td class="is-us">Laptop + two</td>
+            </tr>
+            <tr>
+              <th scope="row">Weight you carry</th>
+              <td>In your bag, every leg</td>
+              <td>None</td>
+              <td class="is-us">None</td>
+            </tr>
+            <tr>
+              <th scope="row">Works at any hotel</th>
+              <td>Yes</td>
+              <td>Only at partner properties</td>
+              <td class="is-us">Yes &mdash; we ship to the hotel</td>
+            </tr>
+            <tr>
+              <th scope="row">Setup each night</th>
+              <td>Unpack, prop, re-cable</td>
+              <td>Varies by property</td>
+              <td class="is-us">Open the case, one cable</td>
+            </tr>
+            <tr>
+              <th scope="row">What it costs</th>
+              <td>Bought once, carried forever</td>
+              <td>A daily rate, per trip</td>
+              <td class="is-us">One predictable monthly price</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= expense -->
+  <section aria-labelledby="expense-title">
+    <div class="wrap">
+      <div class="callout reveal">
+        <svg class="icon lg" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <rect x="11" y="6" width="26" height="36" rx="4" class="ic-stroke"/>
+          <path d="M18 16h12M18 24h12" class="ic-stroke"/>
+          <path d="M18 32h7" class="ic-accent"/>
+        </svg>
+        <div>
+          <h2 id="expense-title">Built to be expensed.</h2>
+          <p>
+            Your firm reimburses the Wi-Fi and the airport sandwich. This should be easier
+            than both. Every month you&rsquo;ll get one itemised invoice with your name, the
+            dates and the cities on it, plus receipts by email as they happen. We&rsquo;ll
+            support direct company billing at launch, so your travel manager can take it
+            off your plate entirely.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================= FAQ -->
+  <section id="faq" class="band" aria-labelledby="faq-title">
+    <div class="wrap narrow">
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2 id="faq-title">Reasonable questions.</h2>
+        <p>We&rsquo;re pre-launch, so some of these are plans rather than promises. Marked as such.</p>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>What if my hotel won&rsquo;t hold packages?</summary>
+          <div class="faq-body">
+            <p>
+              Most business hotels hold guest packages as a matter of course, and we confirm
+              it with the property before anything ships. If a hotel won&rsquo;t, we&rsquo;ll
+              tell you before your trip rather than after, and you won&rsquo;t be billed for
+              that stay. Working out the edge cases is exactly what the founding group is for.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>Does it work with a Mac and a locked-down work PC?</summary>
+          <div class="faq-body">
+            <p>
+              That&rsquo;s the plan: a universal USB-C dock, one cable, no software to install
+              and nothing to approve with IT. Older or restricted laptops sometimes cap you at
+              one external screen &mdash; we&rsquo;ll include the adapters that work around it
+              where we can, and we&rsquo;ll be upfront where we can&rsquo;t.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>What if something breaks while I&rsquo;m on the road?</summary>
+          <div class="faq-body">
+            <p>
+              You tell us, and a replacement ships to your next hotel. You don&rsquo;t pay for
+              normal wear or a monitor that dies on its own. Lost or badly damaged kit is the
+              one case we&rsquo;d charge for, and we&rsquo;ll publish that number plainly before
+              anyone signs up.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>How far ahead do I need to book?</summary>
+          <div class="faq-body">
+            <p>
+              We&rsquo;re targeting a few days&rsquo; notice for a standard delivery, with
+              same-week changes on the unlimited plan. Consulting itineraries move constantly
+              and a service that can&rsquo;t keep up with a Tuesday reroute isn&rsquo;t worth
+              paying for.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>Which cities will you cover?</summary>
+          <div class="faq-body">
+            <p>
+              We&rsquo;re starting with New York, Chicago, Dallas, Atlanta and the Bay Area,
+              because that&rsquo;s where the most consulting nights are. Tell us where you
+              actually fly in the form &mdash; the waitlist decides what opens next.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>Can my company pay for it?</summary>
+          <div class="faq-body">
+            <p>
+              You can expense it from day one with the monthly invoice and emailed receipts.
+              Direct billing to a firm, with multiple consultants under one account, is
+              planned for launch.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>Is the equipment cleaned between users?</summary>
+          <div class="faq-body">
+            <p>
+              Yes. Every kit comes back to us between stays rather than hopping guest to guest.
+              It gets inspected, wiped down, tested and repacked in fresh foam liners. Anything
+              that looks tired gets pulled out of rotation.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>When do you launch?</summary>
+          <div class="faq-body">
+            <p>
+              Honestly: when enough people on this list say they&rsquo;d pay for it. We&rsquo;re
+              validating demand before buying a single monitor. Join the list and you&rsquo;ll
+              hear directly from us &mdash; first about the pilot, then about pricing that stays
+              locked for founding members.
+            </p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ waitlist -->
+  <section id="waitlist" aria-labelledby="waitlist-title">
+    <div class="wrap narrow">
+      <div class="section-head">
+        <span class="eyebrow">Founding members</span>
+        <h2 id="waitlist-title">Become a founding member.</h2>
+        <p>
+          Two minutes now, and you help decide what&rsquo;s in the case and what it costs.
+          No charge, no spam, and we&rsquo;ll only email you about the launch.
+        </p>
+      </div>
+
+      <div class="form-card">
+        <form id="waitlist-form"
+              action="https://docs.google.com/forms/d/e/REPLACE_WITH_FORM_ID/formResponse"
+              method="POST">
+
+          <div class="field">
+            <label for="f-email">Email <span class="req" aria-hidden="true">*</span></label>
+            <input type="email" id="f-email" name="entry.1000000001"
+                   autocomplete="email" required aria-describedby="f-email-note">
+            <p class="hint" id="f-email-note">Where we&rsquo;ll send launch news. Nothing else.</p>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="f-first">First name</label>
+              <input type="text" id="f-first" name="entry.1000000002" autocomplete="given-name">
+            </div>
+
+            <div class="field">
+              <label for="f-role">Role</label>
+              <select id="f-role" name="entry.1000000003">
+                <option value="">Select one</option>
+                <option>Management consultant</option>
+                <option>IT/tech consultant</option>
+                <option>Audit/accounting</option>
+                <option>Sales/sales engineering</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="f-nights">Nights in hotels per month <span class="req" aria-hidden="true">*</span></label>
+              <select id="f-nights" name="entry.1000000004" required>
+                <option value="">Select one</option>
+                <option>1&ndash;4</option>
+                <option>5&ndash;9</option>
+                <option>10&ndash;15</option>
+                <option>16+</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="f-reimburse">Would your employer reimburse this?</label>
+              <select id="f-reimburse" name="entry.1000000005">
+                <option value="">Select one</option>
+                <option>Yes</option>
+                <option>Probably</option>
+                <option>No</option>
+                <option>I&rsquo;m self-employed</option>
+              </select>
+            </div>
+          </div>
+
+          <fieldset class="field" id="plan-field">
+            <legend>Which plan would you pick? <span class="req" aria-hidden="true">*</span></legend>
+            <div class="choices">
+              <label class="choice">
+                <input type="radio" name="entry.1000000006" value="Occasional — $79/mo"
+                       data-plan-input="occasional" required>
+                <span>Occasional &mdash; <span data-price="occasional">$79</span><span data-period="occasional">/mo</span></span>
+              </label>
+              <label class="choice">
+                <input type="radio" name="entry.1000000006" value="Road Warrior — $149/mo"
+                       data-plan-input="roadwarrior">
+                <span>Road Warrior &mdash; <span data-price="roadwarrior">$149</span><span data-period="roadwarrior">/mo</span></span>
+              </label>
+              <label class="choice">
+                <input type="radio" name="entry.1000000006" value="Pay per trip — $35/stay"
+                       data-plan-input="pertrip">
+                <span>Pay per trip &mdash; <span data-price="pertrip">$35</span><span data-period="pertrip">/stay</span></span>
+              </label>
+              <label class="choice">
+                <input type="radio" name="entry.1000000006" value="None at these prices"
+                       data-plan-input="none">
+                <span>None at these prices</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="f-wtp">What would you pay per month?</label>
+            <select id="f-wtp" name="entry.1000000007">
+              <option value="">Select one</option>
+              <option>Under $50</option>
+              <option>$50&ndash;99</option>
+              <option>$100&ndash;149</option>
+              <option>$150&ndash;199</option>
+              <option>$200+</option>
+            </select>
+          </div>
+
+          <fieldset class="field">
+            <legend>Your setup must-haves</legend>
+            <div class="choices two">
+              <label class="choice">
+                <input type="checkbox" name="entry.1000000008" value="Two monitors">
+                <span>Two monitors</span>
+              </label>
+              <label class="choice">
+                <input type="checkbox" name="entry.1000000008" value="One large/ultrawide monitor">
+                <span>One large/ultrawide monitor</span>
+              </label>
+              <label class="choice">
+                <input type="checkbox" name="entry.1000000008" value="Mechanical/full keyboard">
+                <span>Mechanical/full keyboard</span>
+              </label>
+              <label class="choice">
+                <input type="checkbox" name="entry.1000000008" value="Webcam + light">
+                <span>Webcam + light</span>
+              </label>
+              <label class="choice">
+                <input type="checkbox" name="entry.1000000008" value="Laptop stand">
+                <span>Laptop stand</span>
+              </label>
+              <label class="choice">
+                <input type="checkbox" name="entry.1000000008" value="Mac-specific dock">
+                <span>Mac-specific dock</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="f-notes">Anything else?</label>
+            <textarea id="f-notes" name="entry.1000000009" rows="3"
+                      placeholder="Cities you fly to, what your firm would say, what we&rsquo;re missing."></textarea>
+          </div>
+
+          <!-- spam trap: visually hidden, never filled by a human -->
+          <div class="hp" aria-hidden="true">
+            <label for="f-company">Company (leave this empty)</label>
+            <input type="text" id="f-company" name="company_website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <input type="hidden" name="entry.1000000010" id="f-utm" value="">
+          <input type="hidden" name="entry.1000000011" id="f-plan-clicked" value="">
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-accent btn-block">Join the waitlist</button>
+            <p class="hint center">
+              No charge and no card. Your answers go to a private spreadsheet we use to
+              decide whether to build this.
+            </p>
+          </div>
+
+          <p class="form-error" id="form-error" role="alert" hidden>
+            That didn&rsquo;t send &mdash; check your connection and try again.
+          </p>
+        </form>
+
+        <div class="form-success" id="form-success" tabindex="-1" hidden>
+          <svg class="icon lg" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+            <circle cx="24" cy="24" r="17" class="ic-stroke"/>
+            <path d="M16 24.5l6 6 11-12" class="ic-accent"/>
+          </svg>
+          <h3>You&rsquo;re on the list.</h3>
+          <p>
+            We&rsquo;ll email you before anything launches &mdash; and we&rsquo;ll ask what
+            you want in the case before we buy a thing.
+          </p>
+          <p class="share-line">Know a fellow road warrior?</p>
+          <button type="button" class="btn btn-ghost" id="copy-link"
+                  data-label="Copy invite link">Copy invite link</button>
+          <p class="hint" id="copy-status" role="status"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a class="wordmark" href="#top" aria-label="Casework — back to top">
+        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <rect x="3.5" y="8.5" width="25" height="18" rx="3.5"
+                fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M12 8.5V6.5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <rect x="13" y="15" width="6" height="5" rx="1.4" fill="var(--accent)"/>
+        </svg>
+        <span>Casework</span>
+      </a>
+      <p class="fine-print">Your desk, wherever you check in.</p>
+    </div>
+
+    <div class="footer-links">
+      <p>
+        <a href="mailto:hello@casework.co">hello@casework.co</a>
+      </p>
+      <p class="fine-print">
+        Travel program manager or hotel?
+        <a href="mailto:hello@casework.co?subject=Casework%20for%20teams">Get in touch.</a>
+      </p>
+      <p class="fine-print">
+        <a href="privacy.html">Privacy</a>
+        &middot;
+        &copy; <span id="year">2026</span> Casework. Pre-launch; nothing on this page is for sale yet.
+      </p>
+    </div>
+  </div>
+</footer>
 
 <script src="js/config.js"></script>
 <script src="js/main.js" defer></script>
